@@ -1,35 +1,3 @@
-// import React from 'react'
-
-// function Nav() {
-//   return (
-//     // <div>Nav</div>
-//     <ul class="horizontal-list text-center nav-menu">
-//     <li>
-//         <a href="#"> Home </a>
-//     </li>
-//     <li>
-//         <a href="#about"> About </a>
-//     </li>
-//     <li>
-//         <a href="#skills"> Skills </a>
-//     </li>
-//     <li>
-//         <a href="#experience">Experience</a>
-//     </li>
-//     <li>
-//         <a href="#education">Education</a>
-//     </li>
-//     <li>
-//         <a href="#portfolio">Portfolio</a>
-//     </li>
-//     <li>
-//         <a href="#contact">Contact</a>
-//     </li>
-// </ul>
-//   )
-// }
-
-// export default Nav
 
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
@@ -40,14 +8,10 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-// import AdbIcon from '@mui/icons-material/Adb';
 import "./Nav.css"
 
-// const pages = ['Home','About', 'Skills','Experience','Education','Portfolio', 'Contact', ];
 const pages = [
   { label: 'Home', id: 'home' },
   { label: 'About', id: 'about' },
@@ -58,26 +22,24 @@ const pages = [
   { label: 'Contact', id: 'contact' },
 ];
 
-// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
 function Nav() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget);
+  // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null);
+  // };
 
   return (
     <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none'}}>
@@ -116,9 +78,6 @@ function Nav() {
                   <Typography component="a" href={`#${page.id}`} sx={{ textAlign: 'center',fontWeight:'bold' , textDecoration: "none", color:"#44005ad9"}}>
                     {page.label}
                   </Typography>
-                  {/* default given */}
-                  {/* <Typography sx={{ textAlign: 'center' }}>{page}</Typography> */}
-                  {/* default given */}
                 </MenuItem>
               ))}
             </Menu>
@@ -135,15 +94,6 @@ function Nav() {
             >
               {page.label}
             </Button>
-            // default given
-              // <Button
-              //   key={page}
-              //   onClick={handleCloseNavMenu}
-              //   sx={{ my: 2, color: 'white', display: 'block' }}
-              // >
-              //   {page}
-              // </Button>
-            // default given
             ))}
           </Box>
           

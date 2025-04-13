@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Contact.css"
-import { Send, SendAndArchive } from '@mui/icons-material';
+// import { Send, SendAndArchive } from '@mui/icons-material';
 import SocialIcon from '../Social_Icon/Social-Icon';
 
 function Contact() {

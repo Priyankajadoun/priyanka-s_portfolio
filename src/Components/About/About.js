@@ -4,12 +4,10 @@ import myimg from "../../assets/img/4.jpeg";
 
 function About() {
   return (
-    // <div>About</div>
     <>
     <section id="about">
             <div id="my-image">
-                {/* <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg"/> */}
-                <img src={myimg}/>
+                <img src={myimg} alt='my_img'/>
             </div>
 
             <div id="about-para">
