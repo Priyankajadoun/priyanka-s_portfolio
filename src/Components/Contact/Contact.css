@@ -1,0 +1,109 @@
+
+#contact{
+  
+    /*     height:100vh; */
+        background-image:linear-gradient(to top right,#0244a7db,#44005ad9);
+        
+    }
+    /* .contact{
+        color:white;
+    } */
+    
+    .form{
+        color:gray;
+        background:transparent;
+        border-bottom:2px solid white;
+        border-top:none;
+        border-left:none;   
+        border-right:none;
+        width:80%;
+        padding-left: 10px;
+        padding-bottom:20px;
+        font-size:18px;
+        
+    }
+    .form-field{
+        margin:20px;
+    }
+    .send-button{
+       background:transparent;
+        color:white;
+        border:2px solid white;
+        padding:10px;
+        font-weight:900;
+        
+    }
+    #form-container{
+            display: flex;
+        justify-content: space-evenly;
+            /* padding-left: 50px; */
+        /* padding-right: 50px; */
+    }
+    #details{
+    
+        color:white;
+    }
+    .get-in-touch h5{
+        /* font-size:15px; */
+        /* font-weight:200; */
+        text-align: center;
+    }
+    .address{
+        font-size:15px;
+        text-align: center;
+    }
+    .address-heading{
+        text-align: center;
+    }
+    #form{
+        flex:50%;
+    }
+    #details{
+        flex:50%;
+    }
+    .contact-social-icon{
+        padding:30px;
+    }
+    .address{
+        padding:10px;
+    }
+    #details h6{
+        margin-bottom: 20px;
+    }
+
+
+
+    /* contact social list  */
+
+    .horizontal-list {
+        list-style: none;
+        padding-left: 0px;
+        margin: 0px;
+    }
+    
+    .horizontal-list li {
+        display: inline-block;
+        margin: 0px 8px 8px 0px;
+        font-weight: 100;
+        font-size: 0.9rem;
+    }
+    
+    
+    .horizontal-list li a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+    
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}

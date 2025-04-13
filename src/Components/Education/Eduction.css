@@ -1,0 +1,88 @@
+.timeline{
+    position :relative;
+    width:70%;
+}
+.box{
+    position :relative;
+    min-height:15vh;
+    left:2%;
+    margin:5px;
+    width:40%;
+}
+.box-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-img img{
+    width: 60% !important;
+}
+.box-heading{
+    display: flex;
+    flex-direction: column;
+  
+}
+.heading-color{
+    color:#0048b5;   
+    font-weight:600;
+    font-size:1.5rem;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+.institute{
+    color:orange;
+    font-size:1.3rem;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    margin: 0px;
+}
+.duration{
+    color:gray;
+    font-size:1rem;
+    text-align: center !important;
+    margin: 0;
+}
+.box:nth-child(2n+1)::after{
+    content:' ';
+    border-radius: 50%;
+    position:absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 17%;
+    background-color: lightgray;
+    right: -19%;
+    z-index: 1;
+}
+.box:nth-child(2n)::after{
+    content:' ';
+    border-radius: 50%;
+    position:absolute;
+    width: 1rem;
+    height:1rem;
+    top: 50px;
+    background-color: lightgray;
+    left: -17% !important;
+    z-index: 1;
+}
+.box:nth-child(2n){
+    margin-left:53%;
+}
+.divider{
+    position: absolute;
+    top: 7% !important;
+    left: 49%;
+    border: 2px dashed #8dcbcb;
+    height: 65%;
+    width:0;
+  
+}
+.car{
+    z-index:2;
+    color:#0048b5;
+     position: sticky;
+    top:0;
+    rotate: 90deg; 
+}

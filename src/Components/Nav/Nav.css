@@ -1,0 +1,14 @@
+/* Nav.css */
+.camelcase-text {
+    text-transform: capitalize; /* Capitalizes the first letter of each word */
+  }
+  
+  /* .camelcase-text::first-letter {
+    text-transform: lowercase; /* Ensures the first character is lowercase */
+  /* }  */
+  
+  .bold {
+    font-weight:'bold !important';
+  } 
+
+  

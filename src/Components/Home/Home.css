@@ -1,0 +1,28 @@
+.container{
+    height: 90vh;
+    /* opacity: 0.8; */
+    /* background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg); */
+    background-image: url("../../assets/img/km (5).png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+.overlay {
+    width: 100%; 
+    height: 100%;
+    /* background-color: rgba(0, 0, 255, 0.5);  */
+    background-color: rgba(0, 0, 0, 0); 
+  }
+  
+
+.container h1{
+    color: white;
+}
+
+#my-name{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 15);
+}
+/* .soialIcon ul li{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 15);
+} */
