@@ -1,101 +1,165 @@
+#contact {
 
-#contact{
-  
     /*     height:100vh; */
-        background-image:linear-gradient(to top right,#0244a7db,#44005ad9);
-        
-    }
-    /* .contact{
+    /* background-image: linear-gradient(to top right, rgba(20, 45, 81, 1), rgba(68, 32, 99, 1)); */
+    background-image: radial-gradient(circle at center, #101626 0%, #050a18 100%);
+
+}
+
+/* .contact{
         color:white;
     } */
-    
-    .form{
-        color:gray;
-        background:transparent;
-        border-bottom:2px solid white;
-        border-top:none;
-        border-left:none;   
-        border-right:none;
-        width:80%;
-        padding-left: 10px;
-        padding-bottom:20px;
-        font-size:18px;
-        
-    }
-    .form-field{
-        margin:20px;
-    }
-    .send-button{
+
+.form {
+    color: gray;
+    background: transparent;
+    border-bottom: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-size: 18px;
+
+}
+
+.form-field {
+    margin: 2rem;
+}
+.form::placeholder {
+  font-size: 0.8rem;  /* smaller size for placeholder */
+}
+/* .send-button{
        background:transparent;
         color:white;
         border:2px solid white;
         padding:10px;
         font-weight:900;
         
-    }
-    #form-container{
+    } */
+.send-button {
+    background-color: orange;
+    /* Default button color */
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.send-button:hover {
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+}
+
+/* Active effect (when clicked) */
+.send-button:active {
+    background-color: #ff8c00;
+    /* Darker orange */
+    color: white;
+    border: 2px solid white;
+}
+
+/* #form-container{
             display: flex;
-        justify-content: space-evenly;
-            /* padding-left: 50px; */
-        /* padding-right: 50px; */
-    }
-    #details{
-    
-        color:white;
-    }
-    .get-in-touch h5{
-        /* font-size:15px; */
-        /* font-weight:200; */
-        text-align: center;
-    }
-    .address{
-        font-size:15px;
-        text-align: center;
-    }
-    .address-heading{
-        text-align: center;
-    }
-    #form{
+        justify-content: space-evenly; */
+/* padding-left: 50px; */
+/* padding-right: 50px; */
+/* } */
+#details {
+
+    color: white;
+}
+
+.get-in-touch h5 {
+    color: orange;
+    padding-left: 10px;
+}
+
+.address-container {
+    display: flex;
+    flex-direction: column;
+    /* Align items in a vertical column */
+    align-items: flex-start;
+    /* Ensures left alignment */
+    gap: 10px;
+    /* Adds space between address items */
+}
+
+/* .address {
+    font-size: 1rem;
+} */
+
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* optional for vertical centering */
+  gap: 0.3rem; /* optional spacing between items */
+  font-size: 1rem;
+}
+.address span:last-child {
+  word-break: break-word;
+  min-width: 0; /* to allow shrinking */
+  flex-shrink: 1;
+}
+
+
+.address span i{
+    color: orange;
+}
+
+.address-heading{ 
+    padding-left: 10px;
+ } 
+/* #form{
         flex:50%;
     }
     #details{
         flex:50%;
-    }
-    .contact-social-icon{
-        padding:30px;
-    }
-    .address{
-        padding:10px;
-    }
-    #details h6{
-        margin-bottom: 20px;
-    }
+    } */
+.contact-social-icon {
+    padding: 2rem 1.1rem;
+}
+
+.address {
+    padding: 10px;
+}
+
+#details h6 {
+    margin-bottom: 20px;
+}
 
 
 
-    /* contact social list  */
+/* contact social list  */
 
-    .horizontal-list {
-        list-style: none;
-        padding-left: 0px;
-        margin: 0px;
-    }
-    
-    .horizontal-list li {
-        display: inline-block;
-        margin: 0px 8px 8px 0px;
-        font-weight: 100;
-        font-size: 0.9rem;
-    }
-    
-    
-    .horizontal-list li a {
-        color: white;
-        text-decoration: none;
-    }
+.horizontal-list {
+    list-style: none;
+    /* padding-left: 0px;
+    margin: 0px; */
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
 
 
-    
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
 .social-icons li a i {
     /*color: red;*/
     padding: 10px;
@@ -106,4 +170,59 @@
 
 .social-icons li a i:hover {
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+
+/* for medium amd small devices */
+
+#form-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows responsive stacking */
+    justify-content: space-around;
+    gap: 60px;
+    /* Adjust space */
+}
+
+/* Default: Form first */
+#form {
+    order: 1;
+    /* Ensures form comes first */
+}
+
+#details {
+    order: 2;
+   
+}
+
+/* Responsive Behavior */
+@media screen and (max-width: 768px) {
+    #form-container {
+        flex-direction: column;
+        /* Stacks items */
+    }
+    #details{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    
+    }
+ 
+}
+
+.sendBtn {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    width: 100%;
+    /* Ensures full width */
+    height: 100%;
+    /* Adjust as needed */
+    padding-left: 0;
+    /* Removes left padding */
+}
+
+.form {
+    width: 100%
 }

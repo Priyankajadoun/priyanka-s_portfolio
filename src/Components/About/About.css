@@ -3,7 +3,8 @@
     height: auto;
     width: 100%;
     position: relative;
-    background-color: #d3cfcf47;
+    /* background-color: #d3cfcf47; */
+    background-color: white;
 }
 
 #my-image {
@@ -19,7 +20,7 @@
     border-radius: 50%;
     border: 3px solid white;
     box-shadow: 1px 1px 10px 2px lightgrey;
-    margin-top: -17vh;
+    margin-top: -10vh;
 }
 
 
@@ -31,4 +32,27 @@
     line-height: 28px;
     font-size: 1.1rem;
     margin: auto;
+}
+
+
+@media (max-width: 576px) {
+  #my-image {
+    height: 8rem;
+    width: 8rem;
+    margin: auto;
+    /* margin-top: 17vh; */
+}
+
+
+
+}
+
+@media (max-width: 768px) {
+  #my-image {
+    height: 6rem;
+    width: 6rem;
+    margin: auto;
+    
+}
+
 }

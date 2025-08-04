@@ -1,5 +1,5 @@
 #portfolio{
-    background-color: #d3cfcf47;
+    background-color: white;
 }
 
 #portfolio-container {
@@ -36,7 +36,9 @@
     padding: 10px;
     font-size: 1.5rem;
 }
-
+.portfolio-details p{
+    font-size: 0.5rem;
+}
 .portfolio-image-container:hover {
     box-shadow: 0 0 20px #74ADC8;
 }

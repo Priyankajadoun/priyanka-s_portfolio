@@ -1,4 +1,13 @@
 /* Nav.css */
+.navbar {
+  position: sticky;
+  top: -5px;
+  z-index: 100; /* higher than hero and other sections */
+  /* background: linear-gradient(to right, rgba(68, 32, 99, 1), rgba(20, 45, 81, 1)); */
+   background: radial-gradient(circle at center, #101626 0%, #050a18 100%);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+}
+
 .camelcase-text {
     text-transform: capitalize; /* Capitalizes the first letter of each word */
   }
@@ -11,4 +20,24 @@
     font-weight:'bold !important';
   } 
 
-  
+  .nav-logo {
+  /* height:120px;
+  margin-right: -100px; */
+  height: 4.5rem;
+  padding: 0.5rem;
+    /* margin-right: -100px;
+    margin-top: 0.8rem; */
+    /* margin-left: 2rem; */
+}
+
+/* Hide logo on small screens */
+@media (max-width: 768px) {
+  .nav-logo {
+    display: none;
+  }
+}
+@media (max-width: 934px) {
+  .navbar a {
+    font-size: 0.75rem;
+  }
+}

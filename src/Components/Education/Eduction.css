@@ -1,3 +1,6 @@
+#education{
+    background-color: rgb(249, 232, 217);
+}
 .timeline{
     position :relative;
     width:70%;
@@ -30,20 +33,32 @@
     justify-content: center;
     align-items: center;
     display:flex;
+    text-align: center;
 }
 .institute{
-    color:orange;
-    font-size:1.3rem;
+    /* color:orange;
+     font-size: 1rem;
+    flex-wrap: wrap;
+     margin: 0.5rem 1.3rem;
     justify-content: center;
     align-items: center;
     display:flex;
-    margin: 0px;
+    margin: 0px; */
+     color: orange;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    margin: 0.5rem 1.3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+
 }
 .duration{
     color:gray;
-    font-size:1rem;
+    font-size:0.7rem;
     text-align: center !important;
-    margin: 0;
+    margin: 0.2rem 0rem 1.5rem;
 }
 .box:nth-child(2n+1)::after{
     content:' ';
@@ -83,6 +98,44 @@
     z-index:2;
     color:#0048b5;
      position: sticky;
-    top:0;
+    top:5rem;
     rotate: 90deg; 
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .divider {
+        position: absolute;
+        top: 6% !important;
+        left: 0%;
+        border: 2px dashed #8dcbcb;
+        height: 70%;
+        width: 0;
+    }
+
+    .box:nth-child(2n+1)::after {
+        content: ' ';
+        border-radius: 50%;
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        top: 7%;
+        background-color: lightgray;
+        right: 101%;
+        z-index: 1;
+    }
+
+    .box:nth-child(2n)::after {
+        content: ' ';
+        border-radius: 50%;
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        top: 10px;
+        background-color: lightgray;
+        left: -143% !important;
+        z-index: 1;
+    }
 }

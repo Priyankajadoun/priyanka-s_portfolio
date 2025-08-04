@@ -26,9 +26,7 @@ function Contact() {
 
                 <textarea className="form" name="Message" placeholder="Message" cols={30} rows={4} autoComplete='off' required></textarea>
               </div>
-              <div style={{paddingLeft: "25%"}}>
-
-
+              <div className='sendBtn'>
                 <button className="send-button" type='submit'>
                   SEND MESSAGE
                 </button>
@@ -38,7 +36,7 @@ function Contact() {
           <div id="details">
             <div className="get-in-touch">
               <h5>
-                Get in touch
+                Get In Touch
               </h5>
               {/* <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
@@ -47,22 +45,26 @@ function Contact() {
             <h6 className="address-heading">
               My Address
             </h6>
+            <div className='address-container'>
             <div className="address">
-              <span><i className="fa-solid fa-location-dot"></i></span>
+              <span><i className="fa-solid fa-location-dot"></i></span>&nbsp;
               <span>Agra,India</span>
             </div>
             <div className="address">
-              <span><i className="fa-solid fa-mobile-screen-button"></i></span>
+              <span><i className="fa-solid fa-mobile-screen-button"></i></span>&nbsp;
               <span>+919068057526</span>
             </div>
-            <div className="address">
-              <span><i className="fa-regular fa-envelope"></i></span>
+            {/* <div className="address">
+              <span><i className="fa-regular fa-envelope"></i></span>&nbsp;
               <span>jadounpriyanka1@gmail.com</span>
-
-
-
+            </div> */}
+            <div className="address">
+  <span><i className="fa-regular fa-envelope"></i></span>
+  <span>jadounpriyanka1@gmail.com</span>
+</div>
 
             </div>
+          
 
           </div>
         </div>
