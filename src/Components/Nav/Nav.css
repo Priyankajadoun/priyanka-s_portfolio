@@ -12,22 +12,15 @@
     text-transform: capitalize; /* Capitalizes the first letter of each word */
   }
   
-  /* .camelcase-text::first-letter {
-    text-transform: lowercase; /* Ensures the first character is lowercase */
-  /* }  */
+ 
   
   .bold {
     font-weight:'bold !important';
   } 
 
   .nav-logo {
-  /* height:120px;
-  margin-right: -100px; */
   height: 4.5rem;
   padding: 0.5rem;
-    /* margin-right: -100px;
-    margin-top: 0.8rem; */
-    /* margin-left: 2rem; */
 }
 
 /* Hide logo on small screens */
